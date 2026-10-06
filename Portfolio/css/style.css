@@ -1,0 +1,1119 @@
+/* =========================
+   ALGEMENE STIJLEN
+   ========================= */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    line-height: 1.6;
+
+    background:
+        radial-gradient(
+            circle at 20% 20%,
+            rgba(255, 255, 255, 0.35),
+            transparent 25%
+        ),
+        radial-gradient(
+            circle at 80% 60%,
+            rgba(255, 255, 255, 0.25),
+            transparent 30%
+        ),
+        linear-gradient(
+            180deg,
+            #8ee9ed 0%,
+            #4dc9df 45%,
+            #209ec7 100%
+        );
+
+    background-attachment: fixed;
+    color: #222;
+}
+
+
+/* =========================
+   HEADER
+   ========================= */
+
+header {
+    background-color: #222;
+    padding: 20px;
+}
+
+nav {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+
+/* =========================
+   MAIN
+   ========================= */
+
+main {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+h1 {
+    font-size: 40px;
+}
+
+h2 {
+    font-size: 30px;
+}
+
+
+/* =========================
+   ALGEMENE ARTIKELEN
+   ========================= */
+
+article {
+    background-color: #f5f5f5;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+
+/* =========================
+   FOOTER
+   ========================= */
+
+footer {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+
+/* =========================================================
+   PROJECTENPAGINA - LUCHTBEDDEN
+   ========================================================= */
+
+.project-card {
+    width: min(100%, 850px);
+    min-height: 360px;
+
+    box-sizing: border-box;
+
+    margin: 80px auto;
+    padding: 45px 70px;
+
+    position: relative;
+
+    border: 12px solid #ffffff;
+    border-radius: 70px;
+
+    box-shadow:
+        0 20px 35px rgba(0, 70, 100, 0.30),
+        inset 0 8px 15px rgba(255, 255, 255, 0.60),
+        inset 0 -12px 18px rgba(0, 80, 120, 0.18);
+
+    overflow: hidden;
+}
+
+
+/* Binnenste rand van het luchtbed */
+
+.project-card::before {
+    content: "";
+
+    position: absolute;
+    inset: 18px;
+
+    border: 6px solid rgba(255, 255, 255, 0.40);
+    border-radius: 55px;
+
+    box-shadow:
+        inset 0 5px 10px rgba(255, 255, 255, 0.35),
+        inset 0 -6px 10px rgba(0, 80, 120, 0.15);
+
+    pointer-events: none;
+}
+
+
+/* Inhoud van het luchtbed */
+
+.project-content {
+    position: relative;
+    z-index: 2;
+
+    max-width: 700px;
+    margin: 0 auto;
+
+    text-align: center;
+}
+
+.project-content h3 {
+    font-size: 32px;
+
+    margin-top: 10px;
+    margin-bottom: 25px;
+
+    text-shadow:
+        0 2px 0 rgba(255, 255, 255, 0.45);
+}
+
+.project-content p {
+    font-size: 16px;
+}
+
+
+/* =========================================================
+   PROJECTKLEUREN
+   ========================================================= */
+
+
+/* =========================
+   EERSTE STUDIEJAAR
+   ========================= */
+
+
+/* 1. The Challenge
+   Turquoise / aqua
+*/
+
+.project-year:nth-of-type(2) .project-card:nth-of-type(1) {
+
+    background:
+        radial-gradient(
+            ellipse at 50% 15%,
+            rgba(255, 255, 255, 0.55),
+            transparent 45%
+        ),
+        linear-gradient(
+            180deg,
+            #8be8ef 0%,
+            #55cfdf 45%,
+            #2db4d0 100%
+        );
+
+    border-color: #bff8fa;
+}
+
+.project-year:nth-of-type(2)
+.project-card:nth-of-type(1)
+.project-content h3 {
+
+    color: #075b78;
+}
+
+.project-year:nth-of-type(2)
+.project-card:nth-of-type(1)
+.project-content p {
+
+    color: #16445a;
+}
+
+
+/* =========================
+   2. TeamFlow
+   Roze / coral
+   ========================= */
+
+.project-year:nth-of-type(2) .project-card:nth-of-type(2) {
+
+    background:
+        radial-gradient(
+            ellipse at 50% 15%,
+            rgba(255, 255, 255, 0.60),
+            transparent 45%
+        ),
+        linear-gradient(
+            180deg,
+            #ffc4d9 0%,
+            #f89fbd 45%,
+            #ee789f 100%
+        );
+
+    border-color: #ffe1eb;
+}
+
+.project-year:nth-of-type(2)
+.project-card:nth-of-type(2)
+.project-content h3 {
+
+    color: #8e3155;
+}
+
+.project-year:nth-of-type(2)
+.project-card:nth-of-type(2)
+.project-content p {
+
+    color: #633044;
+}
+
+
+/* =========================
+   3. Scrum Escape Building
+   Paars / blauw
+   ========================= */
+
+.project-year:nth-of-type(2) .project-card:nth-of-type(3) {
+
+    background:
+        radial-gradient(
+            ellipse at 50% 15%,
+            rgba(255, 255, 255, 0.60),
+            transparent 45%
+        ),
+        linear-gradient(
+            180deg,
+            #cbb8ff 0%,
+            #9e8be8 45%,
+            #746bc9 100%
+        );
+
+    border-color: #e4dcff;
+}
+
+.project-year:nth-of-type(2)
+.project-card:nth-of-type(3)
+.project-content h3 {
+
+    color: #453c91;
+}
+
+.project-year:nth-of-type(2)
+.project-card:nth-of-type(3)
+.project-content p {
+
+    color: #3f3a63;
+}
+
+
+/* =========================
+   TWEEDE STUDIEJAAR
+   ========================= */
+
+
+/* 4. Digitale veilingklok
+   Royal blue
+*/
+
+.project-year:nth-of-type(3) .project-card:nth-of-type(1) {
+
+    background:
+        radial-gradient(
+            ellipse at 50% 15%,
+            rgba(255, 255, 255, 0.60),
+            transparent 45%
+        ),
+        linear-gradient(
+            180deg,
+            #8cbcff 0%,
+            #5796ed 45%,
+            #356bc9 100%
+        );
+
+    border-color: #d4e8ff;
+}
+
+.project-year:nth-of-type(3)
+.project-card:nth-of-type(1)
+.project-content h3 {
+
+    color: #174a9b;
+}
+
+.project-year:nth-of-type(3)
+.project-card:nth-of-type(1)
+.project-content p {
+
+    color: #183b68;
+}
+
+
+/* =========================
+   5. Data Engineering
+   Mint / groen
+   ========================= */
+
+.project-year:nth-of-type(3) .project-card:nth-of-type(2) {
+
+    background:
+        radial-gradient(
+            ellipse at 50% 15%,
+            rgba(255, 255, 255, 0.60),
+            transparent 45%
+        ),
+        linear-gradient(
+            180deg,
+            #baf5dc 0%,
+            #78d9b1 45%,
+            #4bb994 100%
+        );
+
+    border-color: #dcfff0;
+}
+
+.project-year:nth-of-type(3)
+.project-card:nth-of-type(2)
+.project-content h3 {
+
+    color: #17694f;
+}
+
+.project-year:nth-of-type(3)
+.project-card:nth-of-type(2)
+.project-content p {
+
+    color: #245544;
+}
+
+
+/* =========================
+   6. AI-Agent
+   Roze / paars
+   ========================= */
+
+.project-year:nth-of-type(3) .project-card:nth-of-type(3) {
+
+    background:
+        radial-gradient(
+            ellipse at 50% 15%,
+            rgba(255, 255, 255, 0.60),
+            transparent 45%
+        ),
+        linear-gradient(
+            180deg,
+            #f5b8ee 0%,
+            #cf91df 45%,
+            #a86bc8 100%
+        );
+
+    border-color: #f9dcf5;
+}
+
+.project-year:nth-of-type(3)
+.project-card:nth-of-type(3)
+.project-content h3 {
+
+    color: #713579;
+}
+
+.project-year:nth-of-type(3)
+.project-card:nth-of-type(3)
+.project-content p {
+
+    color: #57335d;
+}
+
+
+/* =========================================================
+   LUCHTBED ROTATIE
+   ========================================================= */
+
+.project-card-left {
+    transform: rotate(-2deg);
+}
+
+.project-card-right {
+    transform: rotate(2deg);
+}
+
+
+/* =========================================================
+   WIE BEN IK? PAGINA
+   ========================================================= */
+
+
+/* Introductie-luchtbed */
+
+.about-intro {
+    width: min(100%, 850px);
+    min-height: 280px;
+
+    box-sizing: border-box;
+
+    margin: 80px auto;
+    padding: 45px 70px;
+
+    position: relative;
+
+    border: 12px solid #bff8fa;
+    border-radius: 70px;
+
+    background:
+        radial-gradient(
+            ellipse at 50% 15%,
+            rgba(255, 255, 255, 0.55),
+            transparent 45%
+        ),
+        linear-gradient(
+            180deg,
+            #8be8ef 0%,
+            #55cfdf 45%,
+            #2db4d0 100%
+        );
+
+    box-shadow:
+        0 20px 35px rgba(0, 70, 100, 0.30),
+        inset 0 8px 15px rgba(255, 255, 255, 0.60),
+        inset 0 -12px 18px rgba(0, 80, 120, 0.18);
+
+    overflow: hidden;
+
+    transform: rotate(-2deg);
+}
+
+
+/* Binnenste rand van introductieluchtbed */
+
+.about-intro::before {
+    content: "";
+
+    position: absolute;
+    inset: 18px;
+
+    border: 6px solid rgba(255, 255, 255, 0.40);
+    border-radius: 55px;
+
+    box-shadow:
+        inset 0 5px 10px rgba(255, 255, 255, 0.35),
+        inset 0 -6px 10px rgba(0, 80, 120, 0.15);
+
+    pointer-events: none;
+}
+
+
+/* Overige luchtbedden */
+
+.about-section {
+    width: min(100%, 850px);
+
+    box-sizing: border-box;
+
+    margin: 80px auto;
+    padding: 45px 70px;
+
+    position: relative;
+
+    border: 12px solid rgba(255, 255, 255, 0.75);
+    border-radius: 70px;
+
+    background:
+        linear-gradient(
+            180deg,
+            rgba(255, 255, 255, 0.35),
+            rgba(255, 255, 255, 0.05)
+        );
+
+    box-shadow:
+        0 20px 35px rgba(0, 70, 100, 0.25),
+        inset 0 8px 15px rgba(255, 255, 255, 0.45),
+        inset 0 -12px 18px rgba(0, 80, 120, 0.15);
+
+    overflow: hidden;
+}
+
+
+/* Binnenste rand van overige luchtbedden */
+
+.about-section::before {
+    content: "";
+
+    position: absolute;
+    inset: 18px;
+
+    border: 6px solid rgba(255, 255, 255, 0.40);
+    border-radius: 55px;
+
+    box-shadow:
+        inset 0 5px 10px rgba(255, 255, 255, 0.35),
+        inset 0 -6px 10px rgba(0, 80, 120, 0.15);
+
+    pointer-events: none;
+}
+
+
+/* Inhoud van de About-luchtbedden */
+
+.about-content {
+    position: relative;
+    z-index: 2;
+
+    max-width: 700px;
+    margin: 0 auto;
+
+    text-align: center;
+}
+
+.about-content h1,
+.about-content h2 {
+    margin-top: 10px;
+    margin-bottom: 25px;
+}
+
+.about-content h1 {
+    font-size: 40px;
+    color: #075b78;
+}
+
+.about-content h2 {
+    font-size: 32px;
+    color: #075b78;
+}
+
+.about-content p {
+    font-size: 16px;
+    color: #16445a;
+}
+
+
+/* Verschillende kleuren voor About-luchtbedden */
+
+
+/* Persoon */
+
+.about-section:nth-of-type(2) {
+
+    background:
+        radial-gradient(
+            ellipse at 50% 15%,
+            rgba(255, 255, 255, 0.60),
+            transparent 45%
+        ),
+        linear-gradient(
+            180deg,
+            #ffc4d9 0%,
+            #f89fbd 45%,
+            #ee789f 100%
+        );
+
+    border-color: #ffe1eb;
+
+    transform: rotate(2deg);
+}
+
+.about-section:nth-of-type(2)
+.about-content h2 {
+
+    color: #8e3155;
+}
+
+.about-section:nth-of-type(2)
+.about-content p {
+
+    color: #633044;
+}
+
+
+/* Interesses */
+
+.about-section:nth-of-type(3) {
+
+    background:
+        radial-gradient(
+            ellipse at 50% 15%,
+            rgba(255, 255, 255, 0.60),
+            transparent 45%
+        ),
+        linear-gradient(
+            180deg,
+            #cbb8ff 0%,
+            #9e8be8 45%,
+            #746bc9 100%
+        );
+
+    border-color: #e4dcff;
+
+    transform: rotate(-2deg);
+}
+
+.about-section:nth-of-type(3)
+.about-content h2 {
+
+    color: #453c91;
+}
+
+.about-section:nth-of-type(3)
+.about-content p {
+
+    color: #3f3a63;
+}
+
+
+/* Vaardigheden */
+
+.about-section:nth-of-type(4) {
+
+    background:
+        radial-gradient(
+            ellipse at 50% 15%,
+            rgba(255, 255, 255, 0.60),
+            transparent 45%
+        ),
+        linear-gradient(
+            180deg,
+            #baf5dc 0%,
+            #78d9b1 45%,
+            #4bb994 100%
+        );
+
+    border-color: #dcfff0;
+
+    transform: rotate(2deg);
+}
+
+.about-section:nth-of-type(4)
+.about-content h2 {
+
+    color: #17694f;
+}
+
+.about-section:nth-of-type(4)
+.about-content p {
+
+    color: #245544;
+}
+
+
+/* Koreaans en Japans */
+
+.about-section:nth-of-type(5) {
+
+    background:
+        radial-gradient(
+            ellipse at 50% 15%,
+            rgba(255, 255, 255, 0.60),
+            transparent 45%
+        ),
+        linear-gradient(
+            180deg,
+            #f5b8ee 0%,
+            #cf91df 45%,
+            #a86bc8 100%
+        );
+
+    border-color: #f9dcf5;
+
+    transform: rotate(-2deg);
+}
+
+.about-section:nth-of-type(5)
+.about-content h2 {
+
+    color: #713579;
+}
+
+.about-section:nth-of-type(5)
+.about-content p {
+
+    color: #57335d;
+}
+
+
+/* =========================================================
+   RESPONSIVE DESIGN - TABLET
+   ========================================================= */
+
+@media (max-width: 768px) {
+
+    main {
+        padding: 30px 15px;
+    }
+
+    nav {
+        gap: 15px;
+    }
+
+    nav a {
+        font-size: 15px;
+    }
+
+    h1 {
+        font-size: 34px;
+    }
+
+    h2 {
+        font-size: 27px;
+    }
+
+
+    /* Projecten */
+
+    .project-card {
+        width: 95%;
+        min-height: auto;
+
+        margin: 60px auto;
+        padding: 40px 45px;
+
+        border-width: 10px;
+        border-radius: 55px;
+    }
+
+    .project-card::before {
+        inset: 14px;
+        border-width: 5px;
+        border-radius: 43px;
+    }
+
+    .project-content h3 {
+        font-size: 28px;
+    }
+
+
+    /* About */
+
+    .about-intro,
+    .about-section {
+
+        width: 95%;
+
+        margin: 60px auto;
+        padding: 40px 45px;
+
+        border-width: 10px;
+        border-radius: 55px;
+    }
+
+    .about-intro::before,
+    .about-section::before {
+
+        inset: 14px;
+
+        border-width: 5px;
+        border-radius: 43px;
+    }
+
+    .about-content h1 {
+        font-size: 34px;
+    }
+
+    .about-content h2 {
+        font-size: 28px;
+    }
+}
+
+
+/* =========================================================
+   RESPONSIVE DESIGN - TELEFOON
+   ========================================================= */
+
+@media (max-width: 480px) {
+
+    body {
+        line-height: 1.5;
+    }
+
+    header {
+        padding: 15px;
+    }
+
+    nav {
+        gap: 12px;
+        flex-wrap: wrap;
+    }
+
+    nav a {
+        font-size: 14px;
+    }
+
+    main {
+        padding: 25px 10px;
+    }
+
+    h1 {
+        font-size: 30px;
+    }
+
+    h2 {
+        font-size: 25px;
+    }
+
+
+    /* Projecten */
+
+    .project-card {
+        width: 100%;
+
+        margin: 45px auto;
+        padding: 35px 25px;
+
+        border-width: 8px;
+        border-radius: 40px;
+
+        transform: none;
+    }
+
+    .project-card::before {
+        inset: 10px;
+
+        border-width: 4px;
+        border-radius: 30px;
+    }
+
+    .project-content {
+        max-width: 100%;
+    }
+
+    .project-content h3 {
+        font-size: 25px;
+        margin-bottom: 20px;
+    }
+
+    .project-content p {
+        font-size: 15px;
+    }
+
+
+    /* About */
+
+    .about-intro,
+    .about-section {
+
+        width: 100%;
+
+        margin: 45px auto;
+        padding: 35px 25px;
+
+        border-width: 8px;
+        border-radius: 40px;
+
+        transform: none;
+    }
+
+    .about-intro::before,
+    .about-section::before {
+
+        inset: 10px;
+
+        border-width: 4px;
+        border-radius: 30px;
+    }
+
+    .about-content {
+        max-width: 100%;
+    }
+
+    .about-content h1 {
+        font-size: 30px;
+    }
+
+    .about-content h2 {
+        font-size: 25px;
+    }
+
+    .about-content p {
+        font-size: 15px;
+    }
+}
+
+
+
+/* =========================
+   BLOG
+   ========================= */
+
+.blog-intro {
+    max-width: 850px;
+    margin: 0 auto;
+    padding: 70px 20px 40px;
+    text-align: center;
+}
+
+.blog-intro-content h1 {
+    font-size: 42px;
+    color: #075b78;
+    margin-bottom: 20px;
+}
+
+.blog-intro-content p {
+    font-size: 18px;
+    color: #16445a;
+}
+
+
+/* Blogartikelen */
+
+.blog-section {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 30px 20px 80px;
+}
+
+.blog-section > h2 {
+    text-align: center;
+    font-size: 32px;
+    color: #075b78;
+    margin-bottom: 60px;
+}
+
+
+/* Algemene blogkaart */
+
+.blog-card {
+    width: min(100%, 850px);
+    box-sizing: border-box;
+    min-height: 300px;
+
+    margin: 70px auto;
+    padding: 45px 70px;
+
+    border: 12px solid #ffffff;
+    border-radius: 70px;
+
+    box-shadow:
+        0 20px 35px rgba(0, 70, 100, 0.30),
+        inset 0 8px 15px rgba(255, 255, 255, 0.60),
+        inset 0 -12px 18px rgba(0, 80, 120, 0.18);
+
+    position: relative;
+    overflow: hidden;
+}
+
+
+/* Binnenste rand van het luchtbed */
+
+.blog-card::before {
+    content: "";
+    position: absolute;
+
+    inset: 18px;
+
+    border: 6px solid rgba(255, 255, 255, 0.40);
+    border-radius: 55px;
+
+    box-shadow:
+        inset 0 5px 10px rgba(255, 255, 255, 0.35),
+        inset 0 -6px 10px rgba(0, 80, 120, 0.15);
+
+    pointer-events: none;
+}
+
+
+/* Tekst boven de decoratieve rand */
+
+.blog-content {
+    position: relative;
+    z-index: 2;
+
+    max-width: 700px;
+    margin: 0 auto;
+
+    text-align: center;
+}
+
+.blog-content h3 {
+    font-size: 30px;
+    margin-top: 10px;
+    margin-bottom: 25px;
+}
+
+.blog-content p {
+    font-size: 16px;
+    line-height: 1.7;
+}
+
+.blog-date {
+    font-size: 14px !important;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+
+/* Blauwe blogkaart */
+
+.blog-card-blue {
+    background:
+        radial-gradient(
+            ellipse at 50% 15%,
+            rgba(255, 255, 255, 0.55),
+            transparent 45%
+        ),
+        linear-gradient(
+            180deg,
+            #8be8ef 0%,
+            #55cfdf 45%,
+            #2db4d0 100%
+        );
+
+    border-color: #bff8fa;
+}
+
+.blog-card-blue h3 {
+    color: #075b78;
+}
+
+.blog-card-blue p {
+    color: #16445a;
+}
+
+
+/* Roze blogkaart */
+
+.blog-card-pink {
+    background:
+        radial-gradient(
+            ellipse at 50% 15%,
+            rgba(255, 255, 255, 0.60),
+            transparent 45%
+        ),
+        linear-gradient(
+            180deg,
+            #ffc4d9 0%,
+            #f89fbd 45%,
+            #ee789f 100%
+        );
+
+    border-color: #ffe1eb;
+}
+
+.blog-card-pink h3 {
+    color: #8e3155;
+}
+
+.blog-card-pink p {
+    color: #633044;
+}
+
+
+/* Paarse blogkaart */
+
+.blog-card-purple {
+    background:
+        radial-gradient(
+            ellipse at 50% 15%,
+            rgba(255, 255, 255, 0.60),
+            transparent 45%
+        ),
+        linear-gradient(
+            180deg,
+            #cbb8ff 0%,
+            #9e8be8 45%,
+            #746bc9 100%
+        );
+
+    border-color: #e4dcff;
+}
+
+.blog-card-purple h3 {
+    color: #453c91;
+}
+
+.blog-card-purple p {
+    color: #3f3a63;
+}
